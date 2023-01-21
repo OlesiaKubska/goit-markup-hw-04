@@ -318,8 +318,14 @@ body {
   fill: currentColor;
 }
 
-.customers-link:is(:hover, :focus) .icon {
-  fill: #404bbf;
+.customers-item:hover,
+.customers-item:focus {
+  border: 1px solid var(--accent-text-color);
+}
+
+.customers-icon:hover,
+.customers-icon:focus {
+  fill: var(--accent-text-color);
 }
 
 .footer {
@@ -446,8 +452,8 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.card:hover,
-.card:focus {
+.project-item:hover,
+.project-item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
