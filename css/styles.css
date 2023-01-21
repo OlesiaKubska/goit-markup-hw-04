@@ -144,12 +144,8 @@ body {
   background-color: var(--toptitle-text-color);
   text-align: center;
   padding: 188px 0;
-  width: 1440px;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../imeges/main-page/people-office.jpg);
+  max-width: 1440px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../imeges/main-page/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -271,7 +267,8 @@ body {
   margin-right: 24px;
 }
 
-.team-social-item :hover {
+.team-social-item:hover,
+.team-social-item:focus {
   background-color: #404bbf;
 }
 
@@ -313,18 +310,16 @@ body {
 }
 
 .customers-icon {
-  width: 104px;
-  height: 56px;
-  fill: currentColor;
+  fill: #8e8f99;
 }
 
-.customers-item:hover,
-.customers-item:focus {
+.customers-link:hover,
+.customers-link:focus {
   border: 1px solid var(--accent-text-color);
 }
 
-.customers-icon:hover,
-.customers-icon:focus {
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
   fill: var(--accent-text-color);
 }
 
@@ -375,7 +370,8 @@ body {
   margin-right: 16px;
 }
 
-.social-item :hover {
+.social-item:hover,
+.social-item:focus {
   background-color: #31d0aa;
 }
 
